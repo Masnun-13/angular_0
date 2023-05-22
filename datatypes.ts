@@ -1,33 +1,42 @@
-let fname : string;
 let lname : string;
 
-fname = "John";
-lname = "Doe";
+lname = "Santosh";
 
-let fname2 : string;
-fname2 = fname.toUpperCase();
+let newname : string;
+newname = lname.toUpperCase();
 
-console.log(fname2, lname);
+console.log(newname);
 
 let age : number;
 
-age = 26.5
+age = 25;
+age = 25.5;
 
-let boo : boolean;
+let dob = "25";
 
-boo = (age>20)
+let result = parseInt("25");
 
-console.log(boo)
+let isValid : boolean = false;
 
-let arr : Array<number>;
+console.log(isValid);
 
-arr = [1,2,3,4,5]
+let empList : string[];
 
-let newarr : number[];
+empList = ["Santosh", "Santosh1", "Santosh2"];
 
-newarr = arr.filter((num)=>num>2)
+let numList : Array<number>;
 
-console.log(newarr)
+numList = [1,2,3,4,5];
+
+let results = numList.filter((num)=> num> 2);
+
+let emp = empList.find((emp)=> emp === "Santosh");
+
+let sum = numList.reduce((acc, num) => acc + num);
+
+console.log(results);
+console.log(emp);
+console.log(sum);
 
 const enum Color {
     Red,
@@ -36,3 +45,19 @@ const enum Color {
 }
 
 let c : Color = Color.Blue
+
+let swapNumbs : [firstNumber: number, secondNumber: number]
+
+function swapNumbers(num1 : number, num2 : number) : [number, number]{
+    return [num2, num1];
+}
+
+swapNumbs = swapNumbers(10, 20);
+
+swapNumbs[0];
+swapNumbs[1];
+
+let department;
+
+department = "IT";
+department = 10;
